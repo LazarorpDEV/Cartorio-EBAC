@@ -112,6 +112,14 @@ int deletar()
 	
 }
 
+ int voltar() 
+ {
+    printf("Obrigado por ultilizar o sistema!\n");
+    system("pause");
+    return 0;
+    
+    
+ }
 
 
 int main()
@@ -132,7 +140,8 @@ int main()
 	 printf("_Selecione a opção desejada_\n\n");
 	 printf("\n 1- Registrar perfil do aluno\n");
 	 printf("\n 2- Consultar perfil do aluno\n");
-	 printf("\n 3- Deletar perfil\n \n");
+	 printf("\n 3- Deletar perfil\n");
+	 printf("\n 4- Sair do sistema\n\n");
 	 printf("_Opção: "); // final do menu
  
 	 scanf("%d", &opcao); // armazenamento das escolhas dos usuarios
@@ -157,6 +166,11 @@ int main()
      	 case 3:
      	 deletar();
 	     break;
+	     
+	     case 4:
+	     voltar();
+	     break;
+	     
 	     
 	     
 	     default:
